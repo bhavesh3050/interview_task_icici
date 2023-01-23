@@ -1,0 +1,22 @@
+
+
+ <div class="container">
+    <button routerLink="adminwork"  class="btn btn-success"> Add New Products</button>
+    <div class="row align-item-center">
+        <ng-container *ngFor="let v of products ,let i = index">
+            <div class="card col-md-3">
+                <img src="{{v.image}}" alt="...">
+                <div class="card-body">
+                    <h6>category: {{v.category}}</h6>
+                    <h5 style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis;">{{v.title}}</h5>
+                    <p style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis;">{{v.description}}</p>
+                    <p><strong>Price :- </strong>${{v.price}}</p>
+                    <button (click)="deleteProduct(v.id ,i)"  class="btn btn-danger m-2">Delete</button>
+                    <button routerLink="adminwork/{{v.id}}"  class="btn btn-primary m-2" >Update</button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+

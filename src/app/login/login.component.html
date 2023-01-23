@@ -1,0 +1,33 @@
+<marquee behavior="" direction="left" bgColor="pink" height="50px"width=100% style="font-size: 30px; padding-top: 5px;" > Well Come To ICICI Lombard</marquee>
+
+
+    <form [formGroup]="loginForm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-3">
+                <div class="mb-3">
+                    <label> User Name</label>
+                    <input type="text" formControlName="Username"placeholder="Enter User Name" class="form-control" required >
+                  </div>
+                <div class="mb-3">
+                    <label>Password</label>
+                    <input type="password" formControlName="Password" placeholder="Enter Your Password" class="form-control" required >
+                </div>       
+                <div>
+                <button (click)="getLogin()" class="mb-3"> Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<P>
+    For Admin Username = bhavesh  / password = 123456
+</P>
+<P>
+    For User Username = shivaji  / password = 123456
+</P>
+<p> please start json server </p>
+
+
+

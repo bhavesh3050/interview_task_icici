@@ -1,0 +1,25 @@
+{
+    "loginData":[
+        {
+            "username":"bhavesh",
+            "password":"123456",
+            "role": "admin"
+        },
+        {
+            "username":"sagar",
+            "password":"123456",
+            "role": "admin"
+        },
+        {
+            "username":"shivaji",
+            "password":"123456",
+            "role": "user"
+        },
+        {
+            "username":"kajal",
+            "password":"123456",
+            "role": "user"
+        }
+        
+    ]
+}
